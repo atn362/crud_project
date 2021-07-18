@@ -1,15 +1,12 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/Nav';
-import Title from './components/Title';
 import SearchBar from './components/SearchBar';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <hr />
-      <Title />
+      <Header />
       <hr />
       <SearchBar />
     </div>
