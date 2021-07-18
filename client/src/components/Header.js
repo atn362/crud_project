@@ -1,14 +1,30 @@
 import React from 'react';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 
-function Header() {
+
+function Head() {
     return(
-        <nav>
-        <div>
-            Hellow 
-        </div>
-        </nav>
+        <div style={{height: '300px', position: 'relative'}}>
+    <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
+        <Header transparent title="Crime Stats Blog" style={{color: 'white'}}>
+            <Navigation>
+                <a href="#">Home</a>
+                <a href="#">Search</a>
+                <a href="#">Comments</a>
+            </Navigation>
+        </Header>
+        <Drawer title="Crime Stats Blog">
+            <Navigation>
+                <a href="#">Home</a>
+                <a href="#">Search</a>
+                <a href="#">Comments</a>
+            </Navigation>
+        </Drawer>
+        <Content />
+    </Layout>
+</div>
     );
 };
 
-export default Header;
+export default Head;
 
