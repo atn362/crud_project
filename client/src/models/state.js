@@ -9,7 +9,7 @@ const stateSchema = new Schema({
     name: {
         type: String,
     },
-
+    
 });
 
 const State = mongoose.model("State", stateSchema);
