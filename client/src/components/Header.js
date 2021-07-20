@@ -10,14 +10,14 @@ function Head() {
             <Navigation>
                 <a href="#">Home</a>
                 <a href="#">Search</a>
-                <a href="#">Comments</a>
+                <a href="#">Comment</a>
             </Navigation>
         </Header>
         <Drawer title="Crime Stats Blog">
             <Navigation>
                 <a href="#">Home</a>
                 <a href="#">Search</a>
-                <a href="#">Comments</a>
+                <a href="#">Comment</a>
             </Navigation>
         </Drawer>
         <Content />
