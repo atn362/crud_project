@@ -37,8 +37,20 @@
   }
 }
 
-.nav-header{
-  height: 75%;
+body{
+  background-image: url("http://www.getmdl.io/assets/demos/transparent.jpg");
+  background-repeat: no-repeat;
+  height: 30%;
 }
 
-
+.text-card{
+  display: flex;
+  height: 5;
+  align-items: center;
+}
+.text-card button{
+  font-size: 24px;
+  background-color: blue;
+  border-radius: 50%;
+  color: white;
+}
