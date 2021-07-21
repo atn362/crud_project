@@ -12,14 +12,14 @@ function Home() {
     label="Username"
     floatingLabel
     style={{width: '200px',
-            background: 'white', height: '30px',  justifyContent: 'center'
+            background: 'white', height: '30px', float: 'center', 
             }}
 />
 <Textfield
     onChange={() => {}}
     label="Password"
     floatingLabel
-    style={{width: '200px',  background: 'white', height: '30px',  justifyContent: 'center'}}
+    style={{width: '200px',  background: 'white', height: '30px',}}
 /> <Button style={{}}>Submit</Button>
 <hr/>
          <Footer />   

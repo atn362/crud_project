@@ -42,10 +42,11 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  -webkit-text-stroke: 1.11px black; /* stroke width and color */
-  color: rgb(255, 255, 255);
+  color: white;
+  /* -webkit-text-stroke: 1.11px black; /* stroke width and color */
+  /* color: rgb(255, 255, 255);
   -webkit-font-smoothing: antialiased;
-  font-weight: bold;
+  font-weight: bold; */ 
 }
 
 .text-card{
