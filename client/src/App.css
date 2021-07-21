@@ -41,6 +41,10 @@ body{
   background-image: url("http://www.getmdl.io/assets/demos/transparent.jpg");
   background-repeat: no-repeat;
   height: 30%;
+  -webkit-text-stroke: 1.11px black; /* stroke width and color */
+  color: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
 }
 
 .text-card{
@@ -53,4 +57,9 @@ body{
   background-color: blue;
   border-radius: 50%;
   color: white;
+}
+
+.text-box{
+  display: flex;
+  align-items: center;
 }

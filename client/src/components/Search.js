@@ -6,6 +6,7 @@ function Search() {
   return (
     <div>
       <h1>Search Design Options</h1>
+      <container className="search-box">
       <Card className="text-card">
       <Textfield
         onChange={() => {}}
@@ -16,6 +17,7 @@ function Search() {
         Submit
       </Button>
       </Card>
+      </container>
       <hr />
       <Footer />
     </div>
