@@ -16,7 +16,7 @@ function App() {
             <Link to="/comment">Comment</Link>
           </Navigation>
         </Header>
-        <Drawer title="Crime Stats Blog">
+        <Drawer style={{background: 'white'}} title="Crime Stats Blog">
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/login">Login</Link>
