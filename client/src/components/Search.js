@@ -6,14 +6,14 @@ function Search() {
   return (
     <div>
       <h1>Search Design Options</h1>
-      <container className="search-box">
-      <Card className="text-card">
+      <container style={{display: 'flex', justifyContent: 'center'}} className="search-box">
+      <Card> 
       <Textfield
         onChange={() => {}}
         label="Text..."
         style={{ width: "200px" }}
       />
-      <Button>
+      <Button style={{background: 'blue', width: '50%'}}>
         Submit
       </Button>
       </Card>
