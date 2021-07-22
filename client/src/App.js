@@ -11,10 +11,10 @@ function App() {
       <Layout>
         <Header  transparent title="Travel Blog" style={{ color: "white" }}>
           <Navigation>
-            <Link to="/">Home</Link>
-            <Link to="/login">Login</Link>
-            <Link to="/search">Search</Link>
-            <Link to="/comment">Comment</Link>
+            <Link style={{color: 'black', fontWeight: "bold", display: "block"}} to="/">Home</Link>
+            <Link style={{color: 'black', fontWeight: "bold"}}to="/login">Login</Link>
+            <Link style={{color: 'black', fontWeight: "bold"}}to="/search">Search</Link>
+            <Link style={{color: 'black', fontWeight: "bold"}}to="/comment">Comment</Link>
           </Navigation>
         </Header>
         <Drawer style={{background: 'white'}} title="Travel Blog">
