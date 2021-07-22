@@ -29,7 +29,7 @@ function Home() {
 
                 <div className='scrollPrompt'>
                     <h2>Scroll Down</h2>
-                    <h2>V</h2>
+                    <h2>v</h2>
                 </div>
             </div>
 
