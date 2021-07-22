@@ -6,25 +6,87 @@ function Home() {
 
     return(
         <div className="home-page">
-        <h1>Login</h1>
-        <Textfield
-    onChange={() => {}}
-    label="Username"
-    floatingLabel
-    style={{width: '200px',
-            background: 'white', height: '30px',  justifyContent: 'center'
+        
+    {/* -- main heading -- */}
+        <h1
+            style={{
+                margin:"0px",
             }}
-/>
-<Textfield
-    onChange={() => {}}
-    label="Password"
-    floatingLabel
-    style={{width: '200px',  background: 'white', height: '30px',  justifyContent: 'center'}}
-/> <Button style={{}}>Submit</Button>
-<hr/>
+        >Login</h1>
+
+    {/* -- subheading -- */}
+        <p
+            style={{
+                fontSize: "30px",
+                margin: "0px 0px 20px 0px",
+
+                color:"white",
+                fontOutline: "1px white solid"
+            }}
+        >and see the world</p>
+        
+
+    {/* -- user inpute fields -- */}
+        <Textfield
+            onChange={() => {}}
+            label="Username"
+            floatingLabel
+            style={{
+                height: '44px',
+                width: '240px',
+                justifyContent: 'center', 
+                margin: "0px 10px 0px 0px", 
+                borderRadius: "5px", 
+
+                background: 'white',   
+                opacity: "0.75",
+                boxShadow: "5px 10px 15px black"
+            }}
+        />
+
+        <Textfield
+            onChange={() => {}}
+            label="Password"
+            floatingLabel
+            style={{
+                height: '44px',
+                width: '240px',  
+                justifyContent: 'center',
+                margin: "0px 0px 0px 10px",
+                borderRadius: "5px", 
+
+                background: 'white', 
+                opacity: "0.75", 
+                boxShadow: "5px 10px 15px black" 
+                
+            }}
+        /> 
+
+    {/* -- submit button -- */}        
+        
+        <br></br> {/* -- moves button to the next line -- */}
+    
+        <Button 
+            style={{
+                height: '40px',
+                width: '200px',  
+                margin: "20px 0px 10px 0px",
+                borderRadius: "5px", 
+
+                background: "white",
+                boxShadow: "5px 10px 15px black"
+            }}
+        
+        >Submit</Button>
+        
+    
+    {/* -- bottom of the page -- */}
+        <hr/>
          <Footer />   
         </div>
     );
 };
 
+
+/* -- exporting -- */
 export default Home;
