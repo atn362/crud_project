@@ -6,16 +6,14 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-
+import 'font-awesome/css/font-awesome.min.css';
 
 
 
 ReactDOM.render(
-  <React.StrictMode>
   <BrowserRouter>
   <App />
-  </BrowserRouter>
-</React.StrictMode>,
+  </BrowserRouter>,
 document.getElementById('root')
 );
 

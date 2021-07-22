@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Footer from './Footer';
 import { Textfield, Button } from 'react-mdl'
@@ -5,6 +6,7 @@ import { Textfield, Button } from 'react-mdl'
 function Home() {
 
     return(
+
         <div className="home-page">
         
     {/* -- main heading -- */}
