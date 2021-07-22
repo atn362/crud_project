@@ -1,46 +1,41 @@
 import React from 'react'
-import { Card, CardTitle, CardActions, CardText, CardMenu } from 'react-mdl';
-import Footer from './Footer';
+import { Grid, Cell } from 'react-mdl'
+// import Footer from './Footer';
 
 function Home() {
 
     return(
-        <div>
-            <h1>Travel Blog Homepage</h1>
-      <Card shadow={0} style={{width: '512px', margin: 'auto', boxShadow: "5px 10px 15px black"}}>
-    <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
-    <CardText>
-        Travel Blog with all necessary information
-    </CardText>
-    <CardActions border>
-    </CardActions>
-    <CardMenu style={{color: '#fff'}}>
-    </CardMenu>
-</Card>
-<hr/>
-<Card shadow={0} style={{width: '512px', margin: 'auto', boxShadow: "5px 10px 15px black"}}>
-    <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
-    <CardText>
-        Travel Blog with all necessary information
-    </CardText>
-    <CardActions border>
-    </CardActions>
-    <CardMenu style={{color: '#fff'}}>
-    </CardMenu>
-</Card>
-<hr/>
-<Card shadow={0} style={{width: '512px', margin: 'auto', boxShadow: "5px 10px 15px black"}}>
-    <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
-    <CardText>
-        Travel Blog with all necessary information
-    </CardText>
-    <CardActions border>
-    </CardActions>
-    <CardMenu style={{color: '#fff'}}>
-    </CardMenu>
-</Card>
-<hr />
-        <Footer />?
+        <div className='homebody'>
+            <div className='section-1'>
+                <div className='titlediv'>
+                    <h1 className='title'>Home Design Options</h1>
+                </div>
+
+                <div className='description'>
+                    <Grid className='grid'>
+                        <Cell col={12}>
+                            <h2> Hello! </h2>
+                        </Cell>
+
+                        <Cell col={12} className='Pcell'>
+                            <p>This is a travel blog that gives crime-related information on the destinations that you want to travel to!</p>
+                        </Cell>
+
+                        <Cell col={12} className='Pcell'>
+                            <p>This project was made by a small team of five coders practing React so if you have feedback or questions, shoot us an email! </p>  
+                        </Cell>
+                    </Grid>
+                </div>
+
+                <div className='scrollPrompt'>
+                    <h2>Scroll Down</h2>
+                    <h2>v</h2>
+                </div>
+            </div>
+
+            <div className='section-2'>
+
+            </div>
         </div>
     );
 };
