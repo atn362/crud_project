@@ -1,5 +1,6 @@
 import React from 'react'
 import { Grid, Cell } from 'react-mdl'
+// import Footer from './Footer';
 
 function Home() {
 
