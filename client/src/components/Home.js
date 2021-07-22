@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, CardTitle, CardActions, CardText, CardMenu } from 'react-mdl';
+import Footer from './Footer';
 
 function Home() {
 
@@ -38,6 +39,8 @@ function Home() {
     <CardMenu style={{color: '#fff'}}>
     </CardMenu>
 </Card>
+<hr />
+        <Footer />?
         </div>
     );
 };
