@@ -70,15 +70,28 @@ function Home() {
             style={{
                 height: '40px',
                 width: '200px',  
-                margin: "20px 0px 10px 0px",
+                margin: "30px 0px 8px 0px",
                 borderRadius: "5px", 
 
                 background: "white",
                 boxShadow: "5px 10px 15px black"
             }}
         
-        >Submit</Button>
+        >Login</Button>
         
+        <br></br>
+        <Button 
+            style={{
+                height: '40px',
+                width: '200px',  
+                margin: "10px 0px 10px 0px",
+                borderRadius: "5px", 
+
+                background: "white",
+                boxShadow: "5px 10px 15px black"
+            }}
+        
+        >Create an account</Button>
     
     {/* -- bottom of the page -- */}
         <hr/>
