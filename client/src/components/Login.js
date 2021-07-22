@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import React from 'react';
 import Footer from './Footer';
@@ -7,6 +8,13 @@ function Home() {
 
     return(
 
+=======
+import React from 'react';
+import Footer from './Footer';
+import { Textfield, Button } from 'react-mdl'
+function Home() {
+    return(
+>>>>>>> fda4914e9f49cbce8d65658defc1712086f662b4
         <div className="home-page">
         
     {/* -- main heading -- */}
@@ -15,19 +23,16 @@ function Home() {
                 margin:"0px",
             }}
         >Login</h1>
-
     {/* -- subheading -- */}
         <p
             style={{
                 fontSize: "30px",
                 margin: "0px 0px 20px 0px",
-
                 color:"white",
                 fontOutline: "1px white solid"
             }}
         >and see the world</p>
         
-
     {/* -- user inpute fields -- */}
         <Textfield
             onChange={() => {}}
@@ -39,13 +44,11 @@ function Home() {
                 justifyContent: 'center', 
                 margin: "0px 10px 0px 0px", 
                 borderRadius: "5px", 
-
                 background: 'white',   
                 opacity: "0.75",
                 boxShadow: "5px 10px 15px black"
             }}
         />
-
         <Textfield
             onChange={() => {}}
             label="Password"
@@ -56,14 +59,12 @@ function Home() {
                 justifyContent: 'center',
                 margin: "0px 0px 0px 10px",
                 borderRadius: "5px", 
-
                 background: 'white', 
                 opacity: "0.75", 
                 boxShadow: "5px 10px 15px black" 
                 
             }}
         /> 
-
     {/* -- submit button -- */}        
         
         <br></br> {/* -- moves button to the next line -- */}
@@ -74,12 +75,12 @@ function Home() {
                 width: '200px',  
                 margin: "30px 0px 8px 0px",
                 borderRadius: "5px", 
-
                 background: "white",
                 boxShadow: "5px 10px 15px black"
             }}
         
         >Login</Button>
+<<<<<<< HEAD
         
         <br></br>
         <Button 
@@ -93,6 +94,20 @@ function Home() {
                 boxShadow: "5px 10px 15px black"
             }}
         
+=======
+        
+        <br></br>
+        <Button 
+            style={{
+                height: '40px',
+                width: '200px',  
+                margin: "10px 0px 10px 0px",
+                borderRadius: "5px", 
+                background: "white",
+                boxShadow: "5px 10px 15px black"
+            }}
+        
+>>>>>>> fda4914e9f49cbce8d65658defc1712086f662b4
         >Create an account</Button>
     
     {/* -- bottom of the page -- */}
@@ -101,7 +116,5 @@ function Home() {
         </div>
     );
 };
-
-
 /* -- exporting -- */
 export default Home;
