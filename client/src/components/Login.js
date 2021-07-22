@@ -1,9 +1,9 @@
-import React from 'react';
-import Footer from './Footer';
+import React, { useState, useEffect } from "react";
+import Footer from "./Footer";
 
 function Home() {
-
-    
+  
+ return (
         <div className="home-page">
         
     {/* -- main heading -- */}
