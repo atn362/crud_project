@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -13,15 +14,12 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App header {
+  background-color: rgb(0, 0, 0,);
+  font-size: 3vh;
   color: white;
+  margin: auto; 
+  width: 100vw;
 }
 
 .App-link {
@@ -38,14 +36,105 @@
 }
 
 body{
-  background-image: url("http://www.getmdl.io/assets/demos/transparent.jpg");
-  background-repeat: no-repeat;
   height: 100%;
-  -webkit-text-stroke: 1.11px black; /* stroke width and color */
   color: rgb(255, 255, 255);
-  -webkit-font-smoothing: antialiased;
-  font-weight: bold;
 }
+
+/* First section background for homepage */
+.homebody {
+  height: 100%;
+}
+.section-1 {
+  padding-top: 7vh;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape,country");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+/* Background images */
+
+/* .img-1 {
+  background-image: url("https://source.unsplash.com/1600x900/?landscape,country");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+} */
+
+/* START Home page title,description and photos */
+
+.titlediv {
+  height: auto;
+  width: 70vw;
+  margin: auto;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+  display: flex;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  font-size: 3vw;
+  z-index: 2;
+}
+
+.description {
+  height: auto;
+  width: 50vw;
+  margin: auto;
+  margin-top: 10vh;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+}
+
+.description h2 {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  width: min-content;
+  padding: 20px;
+  font-size: 2vw;
+}
+
+.Pcell {
+  padding: 0px 10px 0px 10px;
+}
+
+.description p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1vw;
+  text-align: left;
+}
+
+.scrollPrompt {
+  height: auto;
+  width: 15vw;
+  margin: auto;
+  margin-top: 20vh;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 20px;
+}
+
+.scrollPrompt h2 {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  width: 100%;
+  padding: 0;
+  font-size: 2vw;
+}
+
+/** END Home page **/
+
+
 
 .text-card{
   display: flex;
