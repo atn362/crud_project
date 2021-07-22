@@ -1,18 +1,21 @@
 import React from 'react';
+import  Image  from './images/github.png'
 
 function Footer() {
 
     return(
-        <div>
+        <div style={{background: 'white'}}>
+
               <a
                 href="https://github.com/atn362/crud_project"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className="fa fa-github-square" aria-hidden="true" />
+               <img style={{height: '35px'}} src={Image} alt="Github Icon"/>
               </a>
-            <h4>Travel Blog created by Group 3, UofM BootCamp</h4>
-          
+              
+            <p style={{color: 'black'}}>Travel Blog created by Group 3, UofM BootCamp</p>
+            
         </div>
     );
 };
