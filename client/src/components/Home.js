@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid, Cell } from 'react-mdl'
-// import Footer from './Footer';
 
 function Home() {
 
@@ -42,12 +41,12 @@ function Home() {
                 <div className='galleryPost'>
                     <h2>Post an image!</h2>
                     <form>
-                        <input type="text" placeholder="City"></input>
-                        <input type="text" placeholder="State"></input>
+                        <input className='galleryinput' type="text" placeholder="City"></input>
+                        <input className='galleryinput' type="text" placeholder="State"></input>
                         <textarea className='textarea' placeholder='Comments/Notes'></textarea>
                         <input className='file' type="file" name="fileToUpload"></input>
                         <input className='upload' type="submit" value="Upload Image" name="submit"></input>                   
-                        <button className='button' type="submit" value="">Post</button>
+                        <button className='gallerybutton' type="submit" value="">Post</button>
                     </form>
                 </div>
             </div>
