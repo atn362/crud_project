@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid, Cell } from 'react-mdl'
-// import Footer from './Footer';
 
 function Home() {
 
@@ -29,12 +28,27 @@ function Home() {
 
                 <div className='scrollPrompt'>
                     <h2>Scroll Down</h2>
-                    <h2>v</h2>
                 </div>
             </div>
 
             <div className='section-2'>
+                <h1 className='phototitle'>Photos from places around the U.S.</h1>
 
+                <div className='galleryDiv'>
+                    {/* Populated by JS */}
+                </div>
+
+                <div className='galleryPost'>
+                    <h2>Post an image!</h2>
+                    <form>
+                        <input className='galleryinput' type="text" placeholder="City"></input>
+                        <input className='galleryinput' type="text" placeholder="State"></input>
+                        <textarea className='textarea' placeholder='Comments/Notes'></textarea>
+                        <input className='file' type="file" name="fileToUpload"></input>
+                        <input className='upload' type="submit" value="Upload Image" name="submit"></input>                   
+                        <button className='gallerybutton' type="submit" value="">Post</button>
+                    </form>
+                </div>
             </div>
         </div>
     );
