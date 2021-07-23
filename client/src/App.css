@@ -121,6 +121,14 @@ body{
   padding: 10px;
   font-size: 2vw;
 }
+.drawer{
+  display: none;
+}
+@media only screen and (max-width: 600px){
+  .drawer{
+    display: block;
+  }
+}
 
 /* Section 2 stuff */
 

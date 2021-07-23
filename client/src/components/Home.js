@@ -21,7 +21,7 @@ function Home() {
                         </Cell>
 
                         <Cell col={12} className='Pcell'>
-                            <p>This project was made by a small team of five coders practing React so if you have feedback or questions, shoot us an email! </p>  
+                            <p>This project was made by a small team of six coders practing React so if you have feedback or questions, shoot us an email! </p>  
                         </Cell>
                     </Grid>
                 </div>
