@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.css";
-import { Layout, Header, Navigation, Content } from "react-mdl";
+import { Layout, Header, Navigation, Content} from "react-mdl";
 import { Link } from "react-router-dom";
 import Main from "./components/Main";
+import  Image  from '../src/components/images/github.png'
+
 
 
 function App() {
@@ -18,7 +20,21 @@ function App() {
           </Navigation>
         </Header>
         <Content>
-          <Main></Main>
+          <Main>
+          </Main>
+          <div className='footer' style={{background: 'rgb(51, 51, 51)'}}>
+
+              <a
+                href="https://github.com/atn362/crud_project"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+               <img style={{height: '35px'}} src={Image} alt="Github Icon"/>
+              </a>
+              
+            <p style={{color: 'white'}}>Travel Blog created by Group 3, UofM BootCamp</p>
+            
+        </div>
         </Content>
       </Layout>
     </div>
