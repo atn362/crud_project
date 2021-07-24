@@ -1,25 +1,38 @@
 import React from "react";
-import { Textfield, Button, Card } from "react-mdl";
-import Footer from "./Footer";
 
 function Search() {
   return (
-    <div>
-      <h1>Search Design Options</h1>
-      <container style={{display: 'flex', justifyContent: 'center'}} className="search-box">
-      <Card style={{background:"#d3d3d3", display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '25%'}}> 
-      <Textfield
-        onChange={() => {}}
-        label="Enter Desired City"
-        style={{ width: "200px", color: 'black' }}
-      />
-      <Button style={{background: 'blue', width: '50%', color: 'grey', borderRadius: '25%'}}>
-        Submit
-      </Button>
-      </Card>
-      </container>
-      <hr />
-      <Footer />
+    <div className='searchbody'>
+        <div className='searchcontent'>
+          <h1 className='searchtitle'>Search Design Options</h1>
+
+          <div className='form'>
+              <form>
+                <input className='searchinput' type="City" placeholder="City"></input>
+                <input className='searchinput' type="State" placeholder="Sate"></input>  
+
+
+                <p className='choicesprompt'>Please select which of the following you would like you see in results.</p>
+                <div className='choices'>
+                  <label class="container">Crime
+                    <input type="checkbox"></input>
+                    <span class="custombox"></span>
+                  </label>
+                  <label class="container">Popular spots
+                    <input type="checkbox"></input>
+                    <span class="custombox"></span>
+                  </label>
+                  <label class="container">Hotels
+                    <input type="checkbox"></input>
+                    <span class="custombox"></span>
+                  </label>
+                </div>
+
+                <button className='searchbutton' type="submit" value="">Search</button>
+
+              </form>
+          </div>
+        </div>
     </div>
   );
 }
