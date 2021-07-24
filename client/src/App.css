@@ -362,6 +362,162 @@ textarea:focus {
 
 /** END Login Page **/
 
+/** START Search Page **/
+
+.searchbody {
+  height: 95%;
+  padding-top: 40px;
+  background-image: url("https://source.unsplash.com/1600x900/?trails,parks");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.searchcontent {
+  height: auto;
+  width: 60vw;
+  margin: auto;
+  margin-top: 5%;
+  padding: 40px;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+}
+
+.searchtitle {
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  text-align: left;
+  width: fit-content;
+  margin: 0 auto 40px auto;
+  font-size: 55px;
+}
+
+/* 
+.loginsub {
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  text-align: left;
+  width: 30vw;
+  margin: 20px auto 20px auto;
+  font-weight: 500;
+  font-size: 20px;
+} */
+
+
+.form {
+  margin: auto;
+  width: fit-content
+}
+
+.searchinput {
+  color: white;
+  width: 45%;
+  font-size: 15px;
+  padding: 12px 20px;
+  margin: 16px auto 16px auto;
+  box-sizing: border-box;
+  background-color:rgba(94, 94, 94, 0.5);
+  border-radius: 18px;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.searchinput:focus, .searchinput:hover {
+  background-color:rgba(59, 59, 59, 0.5)
+}
+
+.searchbutton {
+  color: white;
+  width: 25%;
+  font-size: 15px;
+  padding: 12px 20px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color:rgba(94, 94, 94, 0.5);
+  border-radius: 18px;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.searchbutton:hover, .searchbutton:focus {
+  background-color:rgba(59, 59, 59, 0.5)
+}
+
+.choicesprompt {
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  text-align: left;
+  width: auto;
+  margin: 20px auto 20px auto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Checkboxes */
+
+/* Div to hold the options nice and tight */
+.choices {
+  margin: auto;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+/* 
+  The container which holds box and text. 
+  W/o it, the span would freak out
+*/
+.container {
+  position: relative;
+  padding-left: 35px;
+  margin: 24px;
+  font-size: 22px;
+  text-align: left;
+  width: 30%;
+  /* Makes it so people can't grab text, even w/o it they can't but it's a failsafe*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.custombox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 7px;
+  background-color: rgba(59, 59, 59, 0.5);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .custombox {
+  background-color: rgba(141, 141, 141, 0.5);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .custombox {
+  background-color: rgb(255, 255, 255, .5)
+}
+
+/** END Search Page **/
+
 /* Scrollbar  */
 
 ::-webkit-scrollbar {
