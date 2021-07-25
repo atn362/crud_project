@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 const citySchema = new Schema({
     id: {
         type: Number,
-        required: true
+        required: true,
+        unique: true,
     },
     name: {
         type: String,
