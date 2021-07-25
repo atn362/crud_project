@@ -1,19 +1,20 @@
 import React from "react";
 import "./App.css";
-import { Layout, Header, Navigation, Content} from "react-mdl";
+import "./mediaQuery.css"
+import { Layout, Header, Navigation, Content, Drawer } from "react-mdl";
 import { Link } from "react-router-dom";
 import Main from "./components/Main";
-import  Image  from '../src/components/images/github.png'
-
-
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <Header title="Crime Stats Travel Blog" style={{ color: "white", backgroundColor:"rgb(0, 0, 0, .8)"}}>
+        <Header
+          title="Travel Blog"
+          style={{ color: "white", backgroundColor: "rgb(0, 0, 0, .8)" }}
+        >
           <Navigation>
-            <Link style={{color: 'white', fontWeight: '500'}} to="/">Home</Link>
+            <Link to="/">Home</Link>
             <Link to="/login">Login</Link>
             <Link to="/search">Search</Link>
             <Link to="/comment">Comment</Link>
@@ -35,7 +36,18 @@ function App() {
               
             <p style={{color: 'white'}}>Travel Blog created by Group 3, UofM BootCamp</p>
             
-        </div>
+          </div>
+        <Drawer className="drawer" title="Travel Blog">
+          <Navigation>
+            <Link to="/">Home</Link>
+            <Link to="/login">Login</Link>
+            <Link to="/search">Search</Link>
+            <Link to="/comment">Comment</Link>
+          </Navigation>
+        </Drawer>
+
+        <Content>
+          <Main></Main>
         </Content>
       </Layout>
     </div>

@@ -4,7 +4,9 @@ const Schema = mongoose.Schema;
 
 const citySchema = new Schema({
     id: {
-        type: Number
+        type: Number,
+        required: true,
+        unique: true,
     },
     name: {
         type: String,
@@ -14,8 +16,7 @@ const citySchema = new Schema({
         type: String,
         required: true
     },
-    restaurants: Array,
-    landmarks: Array,
+    locations: Array,
 });
 
 const City = mongoose.model("City", citySchema);
