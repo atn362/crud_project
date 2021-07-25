@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from './Footer'
 
 function Search() {
   return (
@@ -33,6 +34,9 @@ function Search() {
               </form>
           </div>
         </div>
+        <div className='footer'>
+                <Footer />
+            </div>
     </div>
   );
 }

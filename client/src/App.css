@@ -121,14 +121,6 @@ body{
   padding: 10px;
   font-size: 2vw;
 }
-.drawer{
-  display: none;
-}
-@media only screen and (max-width: 600px){
-  .drawer{
-    display: block;
-  }
-}
 
 /* Section 2 stuff */
 
@@ -541,4 +533,7 @@ textarea:focus {
   padding-top: 20px;
   margin:0;
   position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
