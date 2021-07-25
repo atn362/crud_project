@@ -21,7 +21,7 @@ function App() {
           </Navigation>
         </Header>
 
-        <Drawer className="drawer" title="Travel Blog">
+        <Drawer title="Travel Blog">
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/login">Login</Link>

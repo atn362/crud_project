@@ -1,14 +1,42 @@
 
 /* -- Large Devices --*/
 @media screen and (max-width: 992px) {
-    h2{
-        color: blue;
-        
-    }
-
     .description h2{
-        font-size: 50px;
+        font-size: 17px;
+}
+   .description p{
+       font-size: 14px;
+   }
+   .scrollPrompt h2{
+       font-size: 20px;
+   }
+   .phototitle{
+       font-size: 20px;
+   }
+   .section-1{
+       height: 100vh;
+   }
 
+}
+
+@media screen and (max-width: 992px) {
+    .logintitle{
+        font-size: 17px;
     }
+    .logintitle span{
+        font-size: 15px;
+    }
+    .loginsub{
+        font-size: 12px;
+    }
+    .logininput, .loginbutton, .signupbutton{
+        font-size: 11px;
+    }
+}
 
+@media screen and (max-width: 992px) {
+  
+    .footer{
+        display: none;
+    }
 }
