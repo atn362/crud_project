@@ -26,7 +26,8 @@ function App() {
           {/* Testing for commit */}
           <div className='footer' style={{background: 'rgb(51, 51, 51)'}}>
 
-              <a
+        <Drawer title="Travel Blog">
+          <a
                 href="https://github.com/atn362/crud_project"
                 rel="noopener noreferrer"
                 target="_blank"

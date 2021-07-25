@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 // import { Textfield, Button } from 'react-mdl'
 
 function Home() {
@@ -46,11 +45,7 @@ function Home() {
           </form>
         </div>
       </div>
-      <div ClassName="footer">
-           <Footer />
     </div>
-    </div>
-  
   );
 }
 /* -- exporting -- */
