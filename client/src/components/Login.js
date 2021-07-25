@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-
-import React from 'react';
-import Footer from './Footer';
-import { Textfield, Button } from 'react-mdl'
-
-function Home() {
-
-    return(
-
-=======
 import React from 'react';
 import Footer from './Footer';
 import { Textfield, Button } from 'react-mdl'
 function Home() {
     return(
->>>>>>> fda4914e9f49cbce8d65658defc1712086f662b4
         <div className="home-page">
         
     {/* -- main heading -- */}
@@ -80,21 +68,6 @@ function Home() {
             }}
         
         >Login</Button>
-<<<<<<< HEAD
-        
-        <br></br>
-        <Button 
-            style={{
-                height: '40px',
-                width: '200px',  
-                margin: "10px 0px 10px 0px",
-                borderRadius: "5px", 
-
-                background: "white",
-                boxShadow: "5px 10px 15px black"
-            }}
-        
-=======
         
         <br></br>
         <Button 
@@ -107,7 +80,6 @@ function Home() {
                 boxShadow: "5px 10px 15px black"
             }}
         
->>>>>>> fda4914e9f49cbce8d65658defc1712086f662b4
         >Create an account</Button>
     
     {/* -- bottom of the page -- */}
