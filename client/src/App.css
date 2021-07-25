@@ -531,12 +531,11 @@ textarea:focus {
   width: 100%;
   padding-top: 20px;
   margin:0;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: absolute;
 }
 
-
+.comments form{
+  width: 80%;
+}
 
 
