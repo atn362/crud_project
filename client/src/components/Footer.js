@@ -14,7 +14,7 @@ function Footer() {
                <img style={{height: '35px'}} src={Image} alt="Github Icon"/>
               </a>
               
-            <p style={{color: 'white'}}>Travel Blog created by Group 3, UofM BootCamp</p>
+            <p style={{color: 'white'}}>Travel Blog created by Group 3. UofM BootCamp....2021</p>
             
         </div>
     );
