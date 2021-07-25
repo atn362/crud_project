@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from './Footer';
 const axios = require('axios');
 
 class Search extends React.Component {
@@ -78,7 +77,7 @@ class Search extends React.Component {
             </div>
           </div>
           <div className='footer'>
-                  <Footer />
+                
               </div>
       </div>
     );

@@ -4,7 +4,7 @@ import Footer from './Footer'
 function Comment() {
 
     return(
-        <div>
+        <div className="comments">
         <h1 style={{color: 'black'}}>Comment Design Options</h1>
         <form>
             <input
