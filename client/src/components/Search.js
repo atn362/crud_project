@@ -9,7 +9,7 @@ function Search() {
           <div className='form'>
               <form>
                 <input className='searchinput' type="City" placeholder="City"></input>
-                <input className='searchinput' type="State" placeholder="Sate"></input>  
+                <input className='searchinput' type="State" placeholder="State"></input>  
 
 
                 <p className='choicesprompt'>Please select which of the following you would like you see in results.</p>
