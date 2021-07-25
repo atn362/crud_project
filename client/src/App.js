@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./mediaQuery.css"
 import { Layout, Header, Navigation, Content, Drawer } from "react-mdl";
 import { Link } from "react-router-dom";
 import Main from "./components/Main";

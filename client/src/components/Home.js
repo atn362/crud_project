@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Cell } from "react-mdl";
 
+
 function Home() {
   return (
     <div className="homebody">

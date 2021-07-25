@@ -1,0 +1,14 @@
+
+/* -- Large Devices --*/
+@media screen and (max-width: 992px) {
+    h2{
+        color: blue;
+        
+    }
+
+    .description h2{
+        font-size: 50px;
+
+    }
+
+}
