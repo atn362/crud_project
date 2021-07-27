@@ -45,10 +45,10 @@ class Search extends React.Component {
           <div className='searchcontent'>
             <h1 className='searchtitle'>Search City and State</h1>
   
-            <div className='form'>
+            <div className='forms'>
                 <form onSubmit={this.handleSubmit}>
-                  <input className='searchinput' type="City" placeholder="City" id="city" value={this.state.city} onChange={this.handleChange}></input>
-                  <input className='searchinput' type="State" placeholder="State" id="usState" value={this.state.usState} onChange={this.handleChange}></input>  
+                  <input className='inputs' type="City" placeholder="City" id="city" value={this.state.city} onChange={this.handleChange}></input>
+                  <input className='inputs' type="State" placeholder="State" id="usState" value={this.state.usState} onChange={this.handleChange}></input>  
   
   
                   <p className='choicesprompt'>Please select which of the following you would like you see in results.</p>
@@ -98,7 +98,7 @@ const getDetails= async()=> {;
       console.error(err);
   };
 }
-
+// eslint-disable-next-line
 const getPhotos = async(reference) => {
   try{
       const photoResp = await axios.get('https://maps.googleapis.com/maps/api/place/photo',
