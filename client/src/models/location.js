@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const Schema = mongoose.Scema;
+const Schema = mongoose.Schema;
 
 const locationScema = new Schema({
     id: {

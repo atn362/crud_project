@@ -60,8 +60,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
 }
 
 /* START Home page title,description and photos */
@@ -75,11 +75,9 @@ body{
 }
 
 .title {
-  margin: 0;
+  margin: auto;
   width: fit-content;
   padding: 20px;
-  justify-content: center;
-  z-index: 2;
 }
 
 .description {
