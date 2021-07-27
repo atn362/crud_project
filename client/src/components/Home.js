@@ -11,7 +11,7 @@ function Home() {
         </div>
 
         <div className="description">
-          <Grid className="grid">
+          <Grid>
             <Cell col={12}>
               <h2> Hello! </h2>
             </Cell>
