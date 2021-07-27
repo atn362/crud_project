@@ -7,7 +7,7 @@ function Home() {
     <div className="homebody">
       <div className="section-1">
         <div className="titlediv">
-          <h1 className="title">Home Design Options</h1>
+          <h1 className="title">Goodbye</h1>
         </div>
 
         <div className="description">
@@ -29,12 +29,18 @@ function Home() {
                 React so if you have feedback or questions, shoot us an email!{" "}
               </p>
             </Cell>
+
+            <Cell col={12} className="Pcell">
+              <p>
+                Scroll down to see images from around the USA!
+              </p>
+            </Cell>
           </Grid>
         </div>
       </div>
       <div className="section-2">
         <h1 className="phototitle">Photos from places around the U.S.</h1>
-
+          
         <div className="galleryDiv">{/* Populated by JS */}</div>
 
         <div className="galleryPost">
