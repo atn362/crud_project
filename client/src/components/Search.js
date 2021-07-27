@@ -84,6 +84,7 @@ class Search extends React.Component {
   }
 }
 
+// eslint-disable-next-line
 const getDetails= async()=> {;
   try{
       const resp = await axios.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json',
@@ -98,6 +99,7 @@ const getDetails= async()=> {;
       console.error(err);
   };
 }
+
 // eslint-disable-next-line
 const getPhotos = async(reference) => {
   try{
@@ -117,6 +119,7 @@ const getPhotos = async(reference) => {
   };
 }
 
+// eslint-disable-next-line
 const getLatLon = async(city, state) => {
   try{
 
