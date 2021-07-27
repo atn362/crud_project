@@ -17,14 +17,7 @@
        font-size: 20px;
    }
 
-   .galleryDiv {
-    column-count: 2;
-    column-gap: 10px;
-    -webkit-column-count: 2;
-    -webkit-column-gap:   10px;
-    -moz-column-count:    2;
-    -moz-column-gap:      10px;
-   }
+
 
    .galleryDiv img {
     width: 100% !important;
@@ -36,6 +29,28 @@
        width: 80%;
    }
 
+}
+
+@media screen and (max-width: 770px){
+    .galleryDiv {
+        column-count: 3;
+        column-gap: 10px;
+        -webkit-column-count: 3;
+        -webkit-column-gap:   10px;
+        -moz-column-count:    2;
+        -moz-column-gap:      10px;
+       }
+}
+
+@media screen and (max-width: 540px){
+    .galleryDiv {
+        column-count: 2;
+        column-gap: 10px;
+        -webkit-column-count: 2;
+        -webkit-column-gap:   10px;
+        -moz-column-count:    2;
+        -moz-column-gap:      10px;
+       }
 }
 
 @media screen and (max-width: 992px) {
@@ -75,4 +90,16 @@
 
 .choicesprompt, .searchbutton{
     font-family: 'Baloo Chettan 2', cursive;
+}
+
+@media screen and (max-width: 992px) {
+    .comments h1{
+        font-size: 25px;
+    }
+    .commentbutton{
+        font-size: 10px;
+    }
+    .inputs{
+        font-size: 12px;
+    }
 }

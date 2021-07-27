@@ -47,7 +47,7 @@ class Search extends React.Component {
     getLatLon('Minneapolis', 'MN')
     .then(function(response) {
       if(this.state.restaurants) {
-        getDetails(response.lat, response.lon)
+        getDetails(response.lat, response.lon, 'restaurants')
         .then(function(response) {
           for(var i = 0; i < 5; i++) {
             getPhotos(response.data.results[i].photos[0].photo_reference)
@@ -73,7 +73,7 @@ class Search extends React.Component {
         })
       };
       if(this.state.hotels) {
-        getDetails(response.lat, response.lon)
+        getDetails(response.lat, response.lon, 'hotels')
         .then(function(response) {
           for(var i = 0; i < 5; i++) {
             getPhotos(response.data.results[i].photos[0].photo_reference)
@@ -99,7 +99,7 @@ class Search extends React.Component {
         })
       };
       if(this.state.landmarks) {
-        getDetails(response.lat, response.lon)
+        getDetails(response.lat, response.lon, 'landmarks')
         .then(function(response) {
           for(var i = 0; i < 5; i++) {
             getPhotos(response.data.results[i].photos[0].photo_reference)
@@ -175,6 +175,7 @@ class Search extends React.Component {
 const getLatLon = async(city, state) => {
   try{
 
+    // return response.lat, response.lon;
   } catch (err) {
     console.error(err);
   }
@@ -199,7 +200,7 @@ const getPhotos = async(reference) => {
   };
 }
 
-const getDetails = async(lat,lon)=> {;
+const getDetails = async(lat,lon,type)=> {;
   try{
       const resp = await axios.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json',
       {params:
