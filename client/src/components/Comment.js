@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer'
 
 function Comment() {
 
@@ -26,9 +25,6 @@ function Comment() {
             </button>
           </form>
 
-            <div className="footer">
-                <Footer />
-            </div>
         </div>
     );
 };

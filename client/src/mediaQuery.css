@@ -1,6 +1,12 @@
 
 /* -- Large Devices --*/
 @media screen and (max-width: 992px) {
+    .title{
+        font-size: 30px;
+    }
+    .description{
+        width: 80%;
+    }
     .description h2{
         font-size: 17px;
 }
@@ -8,13 +14,16 @@
        font-size: 14px;
    }
    .scrollPrompt h2{
-       font-size: 20px;
+       font-size: 25px;
    }
    .phototitle{
        font-size: 20px;
    }
    .section-1{
        height: 100vh;
+   }
+   .galleryPost{
+       width: 80%;
    }
 
 }
@@ -34,9 +43,19 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   
     .footer{
         display: none;
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    .searchtitle{
+        font-size: 25px;
+
+    }
+    .searchbutton{
+        font-size: 10px;
     }
 }
