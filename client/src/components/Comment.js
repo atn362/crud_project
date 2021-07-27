@@ -4,7 +4,7 @@ function Comment() {
 
     return(
         <div className="comments">
-        <h1 style={{color: 'black'}}>Comment Design Options</h1>
+        <h1 style={{color: 'black'}}>Comment Section</h1>
         <form>
             <input
               className="comment-input"
