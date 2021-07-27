@@ -1,6 +1,11 @@
 import React from "react";
 const axios = require('axios');
+const Location = require('../models/location.js');
 
+var locName;
+var locIcon;
+var locRating;
+var locType;
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +28,6 @@ class Search extends React.Component {
         break;
       case 'hotels':
         this.setState({hotels: event.target.value});
-        console.log(this.state.hotels);
         break;
       case 'landmarks':
         this.setState({landmarks: event.target.value});
@@ -34,9 +38,92 @@ class Search extends React.Component {
   }
 
   handleSubmit(event) {
+  
     console.log('There has been a submission. Data Below');
     console.log(this.state);
     event.preventDefault();
+
+    getLatLon('Minneapolis', 'MN')
+    .then(function(response) {
+      if(this.state.restaurants) {
+        getDetails(response.lat, response.lon)
+        .then(function(response) {
+          for(var i = 0; i < 5; i++) {
+            getPhotos(response.data.results[i].photos[0].photo_reference)
+          }
+          locName = response.data.results[i].name;
+          locType = 'restaurants';
+          locRating = response.data.results[i].rating;
+          locIcon = response.data.results[i].icon;
+        })
+        .then(function(response, locName, locType, locRating, locIcon){
+          const locJSON = {
+            "name": locName,
+            "type": locType,
+            "icon": locIcon,
+            "image": response.request.res.responseUrl,
+            "rating": locRating,
+            "userRating": 0,
+          }
+          const location = new Location(locJSON);
+
+          Location.create(location);
+          console.log("Location created: " + location);
+        })
+      };
+      if(this.state.hotels) {
+        getDetails(response.lat, response.lon)
+        .then(function(response) {
+          for(var i = 0; i < 5; i++) {
+            getPhotos(response.data.results[i].photos[0].photo_reference)
+          }
+          locName = response.data.results[i].name;
+          locType = 'hotels';
+          locRating = response.data.results[i].rating;
+          locIcon = response.data.results[i].icon;
+        })
+        .then(function(response, locName, locType, locRating, locIcon){
+          const locJSON = {
+            "name": locName,
+            "type": locType,
+            "icon": locIcon,
+            "image": response.request.res.responseUrl,
+            "rating": locRating,
+            "userRating": 0,
+          }
+          const location = new Location(locJSON);
+
+          Location.create(location);
+          console.log("Location created: " + location);
+        })
+      };
+      if(this.state.landmarks) {
+        getDetails(response.lat, response.lon)
+        .then(function(response) {
+          for(var i = 0; i < 5; i++) {
+            getPhotos(response.data.results[i].photos[0].photo_reference)
+          }
+          locName = response.data.results[i].name;
+          locType = 'landmarks';
+          locRating = response.data.results[i].rating;
+          locIcon = response.data.results[i].icon;
+        })
+        .then(function(response, locName, locType, locRating, locIcon){
+          const locJSON = {
+            "name": locName,
+            "type": locType,
+            "icon": locIcon,
+            "image": response.request.res.responseUrl,
+            "rating": locRating,
+            "userRating": 0,
+          }
+          const location = new Location(locJSON);
+
+          Location.create(location);
+          console.log("Location created: " + location);
+        })
+      };
+    });
   }
 
   render() {
@@ -84,20 +171,12 @@ class Search extends React.Component {
   }
 }
 
-// eslint-disable-next-line
-const getDetails= async()=> {;
+const getLatLon = async(city, state) => {
   try{
-      const resp = await axios.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json',
-      {params:
-          {location: '44.980553, -93.270035',
-          radius: '30000',
-          types: 'restaurant',
-          key:'AIzaSyAexWk-s7fGhAtV1jikHnncG5syH41GJ1E'}})
-      
-      return resp}
-  catch (err) {
-      console.error(err);
-  };
+
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 // eslint-disable-next-line
@@ -119,12 +198,18 @@ const getPhotos = async(reference) => {
   };
 }
 
-// eslint-disable-next-line
-const getLatLon = async(city, state) => {
+const getDetails = async(lat,lon)=> {;
   try{
-
-  } catch (err) {
-    console.error(err);
+      const resp = await axios.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json',
+      {params:
+          {location: '44.980553, -93.270035',
+          radius: '30000',
+          types: 'restaurant',
+          key:'AIzaSyAexWk-s7fGhAtV1jikHnncG5syH41GJ1E'}})
+      
+      return resp}
+  catch (err) {
+      console.error(err);
   }
 }
 
