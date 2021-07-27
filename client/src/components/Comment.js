@@ -3,29 +3,32 @@ import React from 'react';
 function Comment() {
 
     return(
+      <div className='commentbody'>
+        
         <div className="comments">
-        <h1 style={{color: 'black'}}>Comment Section</h1>
-        <form>
+          <h1 style={{color: 'white'}}>Comment Design Options</h1>
+          <form className="forms">
             <input
-              className="comment-input"
+              className="inputs"
               type="text"
               placeholder="User"
             ></input>
             <input
-              className="comment-input"
+              className="inputs"
               type="text"
               placeholder="Title"
             ></input>
             <textarea
-              className="textarea"
+              className="commentstextarea"
               placeholder="Comments/Notes"
             ></textarea>
             <button className="commentbutton" type="submit" value="">
               Post
             </button>
           </form>
-
         </div>
+
+      </div>
     );
 };
 

@@ -37,8 +37,6 @@ function Home() {
             </Cell>
           </Grid>
         </div>
-
-  
       </div>
       <div className="section-2">
         <h1 className="phototitle">Photos from places around the U.S.</h1>
