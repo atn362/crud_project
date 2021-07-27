@@ -157,6 +157,9 @@ body{
 .galleryPost:hover, .galleryPost:focus {
   border: 4px solid black;
 }
+.gallerybutton:hover, .loginbutton:hover, .signupbutton:hover, .searchbutton:hover, .commentbutton:hover{
+  cursor: pointer;
+}
 
 /* Form styling */
 
