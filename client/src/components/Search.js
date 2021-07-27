@@ -43,7 +43,7 @@ class Search extends React.Component {
     return (
       <div className='searchbody'>
           <div className='searchcontent'>
-            <h1 className='searchtitle'>Search Design Options</h1>
+            <h1 className='searchtitle'>Search City and State</h1>
   
             <div className='form'>
                 <form onSubmit={this.handleSubmit}>
