@@ -16,6 +16,7 @@ const citySchema = new Schema({
         type: String,
         required: true
     },
+    comments: Array,
     locations: Array,
 });
 
