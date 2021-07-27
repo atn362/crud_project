@@ -105,23 +105,6 @@ body{
   text-align: left;
 }
 
-.scrollPrompt {
-  height: auto;
-  width: 15vw;
-  margin: auto;
-  margin-top: 20vh;
-  background-color: rgb(0, 0, 0, .8);
-  border-radius: 20px;
-}
-
-.scrollPrompt h2 {
-  font-family: 'Open Sans', sans-serif;
-  margin: auto;
-  width: auto;
-  padding: 10px;
-  font-size: 2vw;
-}
-
 /* Section 2 stuff */
 
 .section-2 {
@@ -202,7 +185,7 @@ form {
   margin: 10px;
 }
 
-textarea {
+.textarea {
   width: 100%;
   height: 150px;
   padding: 12px 20px;
@@ -216,7 +199,7 @@ textarea {
   resize: none !important;
 }
 
-textarea:focus {
+.textarea:focus {
   border: 3px solid #555;
 }
 
@@ -257,15 +240,20 @@ textarea:focus {
 
 /** END Home page **/
 
+/* Smaller page body styling */
+
+.loginbody, .searchbody, .commentbody {
+  height: 95%;
+  padding-top: 40px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /** START Login Page **/
 
 .loginbody {
-  height: 95%;
-  padding-top: 40px;
   background-image: url("https://source.unsplash.com/1600x900/?water,nature");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 .logincontent {
@@ -357,12 +345,7 @@ textarea:focus {
 /** START Search Page **/
 
 .searchbody {
-  height: 95%;
-  padding-top: 40px;
   background-image: url("https://source.unsplash.com/1600x900/?trails,parks");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 .searchcontent {
@@ -396,12 +379,12 @@ textarea:focus {
 } */
 
 
-.form {
+.forms {
   margin: auto;
   width: fit-content
 }
 
-.searchinput {
+.inputs {
   color: white;
   width: 45%;
   font-size: 15px;
@@ -416,16 +399,16 @@ textarea:focus {
   outline: none;
 }
 
-.searchinput:focus, .searchinput:hover {
+.inputs:focus, .inputs:hover {
   background-color:rgba(59, 59, 59, 0.5)
 }
 
-.searchbutton {
+.searchbutton, .commentbutton {
   color: white;
   width: 25%;
   font-size: 15px;
   padding: 12px 20px;
-  margin: auto;
+  margin: 15px auto 15px auto;
   box-sizing: border-box;
   background-color:rgba(94, 94, 94, 0.5);
   border-radius: 18px;
@@ -503,12 +486,61 @@ textarea:focus {
   background-color: rgba(141, 141, 141, 0.5);
 }
 
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked, add a lighter background */
 .container input:checked ~ .custombox {
   background-color: rgb(255, 255, 255, .5)
 }
 
 /** END Search Page **/
+
+
+/** START Comment Page **/
+.commentbody {
+  background-image: url("https://source.unsplash.com/1600x900/?parks,moutains");
+}
+
+.comments {
+  height: auto;
+  width: 60vw;
+  margin: auto;
+  margin-top: 5%;
+  padding: 40px;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+}
+
+.comments h1 {
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  text-align: left;
+  width: fit-content;
+  margin: 0 auto 40px auto;
+  font-size: 55px;
+}
+
+.commentstextarea {
+  background-color: rgba(94, 94, 94, 0.5);
+  color: white;
+  width: 95%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 15px auto 15px auto;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.commentstextarea:focus, .commentstextarea:hover {
+  background-color: rgba(59, 59, 59, 0.5)
+}
+
+/** END Comment Page **/
+
 
 /* Scrollbar  */
 
@@ -534,8 +566,15 @@ textarea:focus {
   position: absolute;
 }
 
-.comments form{
-  width: 80%;
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
 }
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
 
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+}

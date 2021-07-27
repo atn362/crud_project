@@ -31,10 +31,6 @@ function Home() {
             </Cell>
           </Grid>
         </div>
-
-        <div className="scrollPrompt">
-          <h2>Scroll Down</h2>
-        </div>
       </div>
       <div className="section-2">
         <h1 className="phototitle">Photos from places around the U.S.</h1>
