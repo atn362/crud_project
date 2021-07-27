@@ -9,7 +9,7 @@ var locType;
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {city: '', usState: '', restaurants: 0, hotels: false, landmarks: 0};
+    this.state = {city: '', usState: '', restaurants: false, hotels: false, landmarks: 0};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,6 +25,7 @@ class Search extends React.Component {
         break;
       case 'restaurants':
         this.setState({restaurants: event.target.value});
+        console.log(this.state.restaurants);
         break;
       case 'hotels':
         this.setState({hotels: event.target.value});
