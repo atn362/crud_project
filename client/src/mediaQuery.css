@@ -1,12 +1,7 @@
-.title, .logintitle, .searchtitle, .comments h1{
-    font-family: 'Bebas Neue', cursive;
-  }
-
-
 /* -- Large Devices --*/
 @media screen and (max-width: 992px) {
     .title{
-        font-size: 30px;
+        font-size: 40px;
     }
     .description{
         width: 80%;
@@ -22,13 +17,25 @@
        font-size: 20px;
    }
 
+   .galleryDiv {
+    column-count: 2;
+    column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap:   10px;
+    -moz-column-count:    2;
+    -moz-column-gap:      10px;
+   }
+
+   .galleryDiv img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 5px 0 5px 0;
+  }
+
    .galleryPost{
        width: 80%;
    }
 
-}
-.description, .description h2, .phototitle, .galleryPost h2, .description p{
-    font-family: 'Baloo Chettan 2', cursive;
 }
 
 @media screen and (max-width: 992px) {

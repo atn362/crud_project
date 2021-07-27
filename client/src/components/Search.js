@@ -178,6 +178,7 @@ const getLatLon = async(city, state) => {
     console.error(err);
   }
 }
+
 // eslint-disable-next-line
 const getPhotos = async(reference) => {
   try{

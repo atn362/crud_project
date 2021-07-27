@@ -7,7 +7,7 @@ function Home() {
     <div className="homebody">
       <div className="section-1">
         <div className="titlediv">
-          <h1 className="title">Goodbye</h1>
+          <h1 className="title">Now that quarantine is over, travel with us</h1>
         </div>
 
         <div className="description">
