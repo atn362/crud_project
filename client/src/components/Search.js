@@ -174,7 +174,7 @@ class Search extends React.Component {
 
 const getLatLon = async(city, state) => {
   try{
-
+    
     // return response.lat, response.lon;
   } catch (err) {
     console.error(err);
