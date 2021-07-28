@@ -1,7 +1,7 @@
 import React from "react";
 // import { Textfield, Button } from 'react-mdl'
 
-function Home() {
+function Login() {
   return (
     <div className="loginbody">
       <div className="logincontent">
@@ -48,5 +48,6 @@ function Home() {
     </div>
   );
 }
+
 /* -- exporting -- */
-export default Home;
+export default Login;
