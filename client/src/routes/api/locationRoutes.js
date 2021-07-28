@@ -1,16 +1,14 @@
 const router = require("express").Router();
-const Location = require('../../models/location');
-
-router.post("/api/location", ({body}, res) => {
-    Location.create(body)
-        .then(dbLocations => {
-            res.json(dbLocations);
-        })
-        .catch(err => {
-            res.status(404).json(err);
-        });
-});
-
-router.get("/api/location", (req, res) => {
-    Location.find({})
-})
+const Location = require("../../models/location.js");
+//const MongoClient = require('mongodb').MongoClient;
+const  MongoClient  = require('mongodb').MongoClient;
+const uri = "mongodb+srv://Bijan:Spideyc9@cluster0.fy5xl.mongodb.net/Travelsite?retryWrites=true&w=majority";
+ MongoClient.connect(uri, function(err, db) {
+     if (err) throw err;
+     var dbo = db.db("UScities");
+     dbo.collection("USAcities").findOne({}, function(err, result) {
+         if (err) throw err;
+         console.log(result);
+         db.close();
+     })
+ })
