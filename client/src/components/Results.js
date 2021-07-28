@@ -1,7 +1,7 @@
 import React from "react";
 import AllLocations from './Locations';
 
-export function Results()
+function Results()
 {
     return AllLocations.map((location, index) => {
         return(
@@ -44,4 +44,4 @@ export function Results()
 //     );
 // }
 
-// export default Results;
+export default Results;
