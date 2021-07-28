@@ -44,6 +44,8 @@ class Search extends React.Component {
   handleSubmit(event) {
   
     var searchString = this.state.city + "," + this.state.usState;
+
+    
     // console.log('There has been a submission. Data Below');
     // console.log(this.state);
     // event.preventDefault();
@@ -143,13 +145,13 @@ class Search extends React.Component {
                   <input className='inputs' type="State" placeholder="State" id="usState" value={this.state.usState} onChange={this.handleChange}></input>  
   
   
-                  <p className='choicesprompt'>Please select which of the following you would like you see in results.</p>
-                  <div className='choices'>
+                  {/* <p className='choicesprompt'>Please select which of the following you would like you see in results.</p>
+                  <div className='choices'> */}
                     {/* <label class="container">Crime
                       <input type="checkbox"></input>
                       <span class="custombox"></span>
                     </label> */}
-                    <label class="container">Restaurants
+                    {/* <label class="container">Restaurants
                       <input type="checkbox" id="restaurants" value={this.state.restaurants} onChange={this.handleChange}></input>
                       <span class="custombox"></span>
                     </label>
@@ -161,7 +163,7 @@ class Search extends React.Component {
                       <input type="checkbox" id="landmarks" value={this.state.landmarks} onChange={this.handleChange}></input>
                       <span class="custombox"></span>
                     </label>
-                  </div>
+                  </div> */}
   
                   <button id="searchbutton" className='searchbutton' type="submit" value="Submit">Search</button>
   
