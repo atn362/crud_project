@@ -10,6 +10,7 @@ function Results() {
             </div>
 
             <div  className="resultsdiv ">
+
                 <div className="resultscolumn">
                     <h2> Restaurants </h2>
                     <p></p>
@@ -17,7 +18,6 @@ function Results() {
 
                 <div className="resultscolumn">
                     <h2> Hotels </h2>
-
                     <p></p>
                 </div>
 
@@ -25,6 +25,7 @@ function Results() {
                     <h2> Landmarks </h2>
                     <p></p>
                 </div>
+
             </div >
         </div>
     );
