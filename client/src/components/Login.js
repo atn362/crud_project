@@ -33,7 +33,7 @@ function Login() {
             ></input>
             <input
               className="logininput"
-              type="text"
+              type="password"
               placeholder="Password"
             ></input>
             <button className="loginbutton" type="submit" value="">
