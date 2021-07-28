@@ -6,10 +6,7 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-<<<<<<< HEAD
-=======
 // import connection from '../../server/server.js';
->>>>>>> dc04cf684e2a7a322d80839b31c6d91457c7933f
 
 
 ReactDOM.render(
