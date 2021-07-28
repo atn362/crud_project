@@ -1,16 +1,16 @@
 /* -- Large Devices --*/
 @media screen and (max-width: 992px) {
     .title{
-        font-size: 40px;
+        font-size: 50px;
     }
     .description{
         width: 80%;
     }
     .description h2{
-        font-size: 17px;
+        font-size: 40px;
 }
    .description p{
-       font-size: 14px;
+       font-size: 20px;
    }
 
    .phototitle{
@@ -32,6 +32,10 @@
 }
 
 @media screen and (max-width: 770px){
+    /* .description h2 {
+        font-size: 20px;
+    } */
+
     .galleryDiv {
         column-count: 3;
         column-gap: 10px;
