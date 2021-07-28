@@ -6,6 +6,7 @@ var locName;
 var locIcon;
 var locRating;
 var locType;
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
