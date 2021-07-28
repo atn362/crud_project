@@ -45,11 +45,11 @@ body{
   height: auto;
 }
 
-.title, .logintitle, .searchtitle, .comments h1{
+.title, .logintitle, .searchtitle, .comments h1, .resultstitle {
   font-family: 'Bebas Neue', cursive;
 }
 
-.description, .description h2, .phototitle, .galleryPost h2, .description p{
+.description, .description h2, .description p, .phototitle, .galleryPost h2, .resultsgrid h2{
   font-family: 'Baloo Chettan 2', cursive;
 }
 
@@ -60,8 +60,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
+  padding-top: 40px;
+  padding-bottom: 1px;
 }
 
 /* START Home page title,description and photos */
@@ -72,14 +72,15 @@ body{
   margin: auto;
   background-color: rgb(0, 0, 0, .8);
   border-radius: 30px;
+  padding: 10px;
 }
 
 .title {
-  margin: 0;
+  margin: auto;
   width: fit-content;
   padding: 20px;
-  justify-content: center;
-  z-index: 2;
+  color: white;
+	font-size: 60px;
 }
 
 .description {
@@ -90,6 +91,7 @@ body{
   margin-bottom: 20vh;
   background-color: rgb(0, 0, 0, .8);
   border-radius: 30px;
+  padding: 20px;
 }
 
 .description h2 {
@@ -157,10 +159,46 @@ body{
 }
 
 .galleryPost:hover, .galleryPost:focus {
-  border: 4px solid black;
+  border: 4px solid rgba(51, 51, 51);
 }
 .gallerybutton:hover, .loginbutton:hover, .signupbutton:hover, .searchbutton:hover, .commentbutton:hover{
   cursor: pointer;
+}
+
+/* Gallery overlay styling */
+
+.overlaycontainer {
+  position: relative;
+  width: 100%;
+}
+
+.galleryoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.overlaycontainer:hover .galleryoverlay {
+  opacity: .5;
+}
+
+.galleryoverlaytext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /* Form styling */
@@ -206,10 +244,6 @@ form {
   resize: none !important;
 }
 
-.textarea:focus {
-  border: 3px solid #555;
-}
-
 .galleryinput {
   width: 45%;
   padding: 12px 20px;
@@ -222,8 +256,8 @@ form {
   outline: none;
 }
 
-.galleryinput:focus {
-  border: 3px solid #555;
+.galleryinput:focus, .galleryinput:hover, .textarea:focus, .textarea:hover {
+  border: 3px solid rgba(51, 51, 51);
 }
 
 .gallerybutton {
@@ -240,8 +274,8 @@ form {
   border-radius: 10px;
 }
 
-.button:hover, .button:focus {
-  border: 3px solid black;
+.gallerybutton:hover, .gallerybutton:focus {
+  border: 3px solid rgba(51, 51, 51);
   color: black;
 }
 
@@ -249,12 +283,14 @@ form {
 
 /* Smaller page body styling */
 
-.loginbody, .searchbody, .commentbody {
-  height: 95%;
+.loginbody, .searchbody, .commentbody, .resultsbody {
+  min-height: 95%;
+  height: auto;
   padding-top: 40px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 1px;
 }
 
 /** START Login Page **/
@@ -263,19 +299,10 @@ form {
   background-image: url("https://source.unsplash.com/1600x900/?water,nature");
 }
 
-.logincontent {
-  height: auto;
-  width: fit-content;
-  margin: auto;
-  padding: 40px;
-  background-color: rgb(0, 0, 0, .8);
-  border-radius: 30px;
-}
-
 .loginhead {
   margin: auto;
   height: auto;
-  width: 40vw;
+  width: fit-content;
 }
 
 .logintitle {
@@ -283,18 +310,18 @@ form {
   text-align: left;
   width: fit-content;
   margin: auto;
-  font-size: 55px;
+  font-size: 60px;
 }
 
 .logintitle span {
-  font-size: 45px;
+  font-size: 40px;
   font-style:italic;
 }
 
 .loginsub {
   color:white;
-  text-align: left;
-  width: 30vw;
+  text-align: center;
+  width: 90%;
   margin: 20px auto 20px auto;
   font-weight: 500;
   font-size: 20px;
@@ -353,7 +380,7 @@ form {
   background-image: url("https://source.unsplash.com/1600x900/?trails,parks");
 }
 
-.searchcontent {
+.searchcontent, .logincontent, .comments {
   height: auto;
   width: 60vw;
   margin: auto;
@@ -490,16 +517,6 @@ form {
   background-image: url("https://source.unsplash.com/1600x900/?parks,moutains");
 }
 
-.comments {
-  height: auto;
-  width: 60vw;
-  margin: auto;
-  margin-top: 5%;
-  padding: 40px;
-  background-color: rgb(0, 0, 0, .8);
-  border-radius: 30px;
-}
-
 .comments h1 {
   color:white;
   text-align: left;
@@ -531,6 +548,50 @@ form {
 
 /** END Comment Page **/
 
+/** START Results Page **/
+.resultsbody {
+  min-height: 95%;
+  height: auto;
+}
+
+.resultstitlediv {
+  height: auto;
+  width: fit-content;
+  margin: auto;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+  padding: 20px 30px;
+}
+
+.resultstitle {
+  margin: auto;
+  width: fit-content;
+}
+
+.resultsdiv {
+  height: auto;
+  width: auto;
+  margin: 20px !important;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.resultscolumn {
+  height: 550px;
+  width: 100%;
+  margin: 20px;
+  background-color: rgba(59, 59, 59, 0.5);
+}
+
+.resultscell h2{
+  margin: 10px auto 10px auto;
+}
+
+
+/** END Results Page **/
 
 /* Scrollbar  */
 
@@ -567,4 +628,12 @@ form {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
  color: white;
+}
+
+.commentstextarea::placeholder {
+  color: white;
+}
+
+.galleryinput::placeholder, textarea::placeholder {
+  color: black;
 }
