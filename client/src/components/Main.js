@@ -8,7 +8,7 @@ import Results from './Results'
 
 
 const Main = () => (
-    <Switch>
+    <Switch>``
     <Route exact path="/" component={Home} />
     <Route exact path="/login" component={Login} />
     <Route path="/search" component={Search} />
