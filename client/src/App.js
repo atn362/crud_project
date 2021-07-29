@@ -19,6 +19,7 @@ function App() {
             <Link to="/login">Login</Link>
             <Link to="/search">Search</Link>
             <Link to="/comment">Comment</Link>
+            <Link to="/results">Results</Link>
           </Navigation>
         </Header>
 
@@ -30,6 +31,7 @@ function App() {
             <Link to="/login">Login</Link>
             <Link to="/search">Search</Link>
             <Link to="/comment">Comment</Link>
+            <Link to="/results">Results</Link>
           </Navigation>
         </Drawer>
 
