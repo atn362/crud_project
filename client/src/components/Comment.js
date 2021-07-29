@@ -3,8 +3,7 @@ import React from 'react';
 function Comment() {
 
     return(
-      <div className='commentbody'>
-        <div className='section-1'>  
+      <div className='commentbody'> 
           <div className="comments">
 
             <h1 style={{color: 'white'}}>Comment Design Options</h1>
@@ -36,12 +35,6 @@ function Comment() {
 
           </div>
         </div>
-        <div className='section-2'>
-          <div className=''>
-            
-          </div>
-        </div>
-      </div>
     );
 };
 

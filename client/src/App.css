@@ -61,7 +61,7 @@ body{
   background-size: cover;
   height: auto;
   padding-top: 40px;
-  padding-bottom: 1px;
+  padding-bottom: 50px;
 }
 
 /* START Home page title,description and photos */
@@ -80,7 +80,7 @@ body{
   width: fit-content;
   padding: 20px;
   color: white;
-	font-size: 60px;
+	font-size: 50px !important;
 }
 
 .description {
@@ -98,6 +98,7 @@ body{
   margin: auto;
   width: min-content;
   padding: 20px;
+  font-size: 40px !important;
 }
 
 .Pcell {
@@ -110,6 +111,8 @@ body{
   width: 100%;
   font-size: 20px;
   text-align: left;
+  font-size: 20px !important;
+  text-align: center;
 }
 
 /* Section 2 stuff */
@@ -125,6 +128,7 @@ body{
   padding: 20px;
   height: auto;
   width: fit-content;
+  font-size: 40px !important;
 }
 
 .galleryDiv {

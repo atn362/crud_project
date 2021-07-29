@@ -36,7 +36,7 @@ export function Restaurants()
             <div className="resultscolumn" key={index}>
                 <h2>{location.name}</h2>
                 <p className='resultstype'>{location.type}</p>
-                <p className='rating'>Rating: {location.rating} &#11088</p>
+                <p className='rating'>Rating: {location.rating} </p>
                 <img className='resultsimg' src={location.image} alt="locationImage"/>
             </div>
         )

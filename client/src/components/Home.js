@@ -18,7 +18,7 @@ function Home() {
 
             <Cell col={12} className="Pcell">
               <p>
-                This is a travel blog that gives crime-related information on
+                This is a travel blog that gives some information on
                 the destinations that you want to travel to!
               </p>
             </Cell>
