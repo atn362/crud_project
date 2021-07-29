@@ -19,9 +19,9 @@ export function Lodging()
         return(
             <div className="resultscolumn" key={index}>
                 <h2>{location.name}</h2>
-                <p>{location.type}</p>
-                <p>Rating: {location.rating}</p>
-                <img src={location.image} alt="locationImage"/>
+                <p className='resultstype' >{location.type}</p>
+                <p className='rating'>Rating: {location.rating}</p>
+                <img className='resultsimg' src={location.image} alt="locationImage"/>
             </div>
         )
     })
