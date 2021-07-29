@@ -168,9 +168,6 @@ class Search extends React.Component {
                 </form>
             </div>
           </div>
-          <div className='footer'>
-                
-              </div>
       </div>
     );
   }
