@@ -1,16 +1,14 @@
 {
   "name": "crud_project",
-  "engines": {
+   "engines": {
     "node": "14.16.0"
   },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
