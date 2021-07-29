@@ -579,7 +579,7 @@ form {
   justify-content: center;
 }
 
-.resultscolumn {
+.restaurantscolumn, .lodgingcolumn, .entertainmentcolumn{
   height: 550px;
   width: 100%;
   margin: 20px;
