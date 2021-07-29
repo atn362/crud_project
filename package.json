@@ -1,22 +1,54 @@
 {
-  "name": "crud_project",
+  "name": "crud",
+  "version": "0.1.0",
   "engines": {
     "node": "14.16.0"
   },
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "fs": "0.0.1-security",
+    "masonry-layout": "^4.2.2",
+    "mongodb": "^4.0.1",
+    "mongoose": "^5.13.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-fontawesome": "^1.7.1",
+    "react-mdl": "^2.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/atn362/crud_project.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/atn362/crud_project/issues"
-  },
-  "homepage": "https://github.com/atn362/crud_project#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
