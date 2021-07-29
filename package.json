@@ -1,6 +1,6 @@
 {
   "name": "crud_project",
-   "engines": {
+  "engines": {
     "node": "14.16.0"
   },
   "version": "1.0.0",
