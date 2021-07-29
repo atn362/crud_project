@@ -13,17 +13,17 @@ function Results() {
 
             <div  className="resultsdiv ">
                 <div className="restaurantscolumn">
-                    <h2> Restaurants </h2>
+                    <h3> Restaurants </h3>
                     <Restaurants />
                 </div>
 
                 <div className="lodgingcolumn">
-                    <h2> Hotels </h2>
+                    <h3> Hotels </h3>
                     <Lodging />
                 </div>
 
                 <div className="entertainmentcolumn">
-                    <h2> Entertainment </h2>
+                    <h3> Entertainment </h3>
                     <Entertainment />
                 </div>
             </div >
