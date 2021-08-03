@@ -1,0 +1,667 @@
+.App {
+  text-align: center;
+  height: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App header {
+  color: white;
+  margin: auto; 
+  width: 100vw;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+body{
+  height: auto;
+  color: rgb(255, 255, 255);
+}
+
+
+.homebody {
+  height: auto;
+}
+
+.title, .logintitle, .searchtitle, .comments h1, .resultstitle {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.description, .description h2, .description p, .phototitle, .galleryPost h2, .resultsgrid h2{
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+/* First section background for homepage */
+
+.section-1 {
+  background-image: url("https://source.unsplash.com/1600x900/?landscape,country");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+/* START Home page title,description and photos */
+
+.titlediv {
+  height: auto;
+  width: 60vw;
+  margin: auto;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.title {
+  margin: auto;
+  width: fit-content;
+  padding: 20px;
+  color: white;
+	font-size: 50px !important;
+}
+
+.description {
+  height: auto;
+  width: 50vw;
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.description h2 {
+  margin: auto;
+  width: min-content;
+  padding: 20px;
+  font-size: 40px !important;
+}
+
+.Pcell {
+  padding: 0px 10px 30px 10px;
+}
+
+.description p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  font-size: 20px !important;
+  text-align: center;
+}
+
+/* Section 2 stuff */
+
+.section-2 {
+  height: auto;
+  background-color: rgb(51, 51, 51);
+  padding: 40px;
+}
+
+.phototitle {
+  margin:auto;
+  padding: 20px;
+  height: auto;
+  width: fit-content;
+  font-size: 40px !important;
+}
+
+.galleryDiv {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: auto;
+  width: 100%;
+  column-count: 4;
+  column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap:   20px;
+  -moz-column-count:    4;
+  -moz-column-gap:      20px;
+}
+
+.galleryDiv img {
+  width: 100% !important;
+  height: auto !important;
+  margin: 10px 0 10px 0;
+}
+
+.galleryPost {
+  padding: 40px;
+  width: 30vw;
+  height: auto;
+  margin: auto;
+  background-color:rgba(235, 235, 235);
+  border-radius: 20px;
+  border: 4px solid rgba(235, 235, 235);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.galleryPost:hover, .galleryPost:focus {
+  border: 4px solid rgba(51, 51, 51);
+}
+.gallerybutton:hover, .loginbutton:hover, .signupbutton:hover, .searchbutton:hover, .commentbutton:hover{
+  cursor: pointer;
+}
+
+/* Gallery overlay styling */
+
+.overlaycontainer {
+  position: relative;
+  width: 100%;
+}
+
+.galleryoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.overlaycontainer:hover .galleryoverlay {
+  opacity: .5;
+}
+
+.galleryoverlaytext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Form styling */
+
+
+form {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.galleryPost h2 {
+  color: black;
+  width: auto;
+  margin-top: 0;
+}
+
+.file {
+  color: black;
+  width: 210px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.upload {
+  height: 21px;
+  width: 99px;
+  margin: 10px;
+}
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  resize: none !important;
+}
+
+.galleryinput {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 16px 8px 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.galleryinput:focus, .galleryinput:hover, .textarea:focus, .textarea:hover {
+  border: 3px solid rgba(51, 51, 51);
+}
+
+.gallerybutton {
+  width: 45% !important;
+  height: 50px !important;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.gallerybutton:hover, .gallerybutton:focus {
+  border: 3px solid rgba(51, 51, 51);
+  color: black;
+}
+
+/** END Home page **/
+
+/* Smaller page body styling */
+
+.loginbody, .searchbody, .commentbody, .resultsbody {
+  min-height: 95%;
+  height: auto;
+  padding-top: 40px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1px;
+}
+
+/** START Login Page **/
+
+.loginbody {
+  background-image: url("https://source.unsplash.com/1600x900/?water,nature");
+}
+
+.loginhead {
+  margin: auto;
+  height: auto;
+  width: fit-content;
+}
+
+.logintitle {
+  color:white;
+  text-align: left;
+  width: fit-content;
+  margin: auto;
+  font-size: 60px;
+}
+
+.logintitle span {
+  font-size: 40px;
+  font-style:italic;
+}
+
+.loginsub {
+  color:white;
+  text-align: center;
+  width: 90%;
+  margin: 20px auto 20px auto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Login form */
+
+.form {
+  margin: auto;
+  width: fit-content
+}
+
+.logininput {
+  color: white;
+  width: 45%;
+  font-size: 15px;
+  padding: 12px 20px;
+  margin: 16px auto 16px auto;
+  box-sizing: border-box;
+  background-color:rgba(94, 94, 94, 0.5);
+  border-radius: 18px;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.logininput:focus, .logininput:hover {
+  background-color:rgba(59, 59, 59, 0.5)
+}
+
+.loginbutton, .signupbutton {
+  color: white;
+  width: 25%;
+  font-size: 15px;
+  padding: 12px 20px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color:rgba(94, 94, 94, 0.5);
+  border-radius: 18px;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.loginbutton:hover, .loginbutton:focus, .signupbutton:hover, .signupbutton:focus {
+  background-color:rgba(59, 59, 59, 0.5)
+}
+
+/** END Login Page **/
+
+/** START Search Page **/
+
+.searchbody {
+  background-image: url("https://source.unsplash.com/1600x900/?trails,parks");
+}
+
+.searchcontent, .logincontent, .comments {
+  height: auto;
+  width: 60vw;
+  margin: auto;
+  margin-top: 5%;
+  padding: 40px;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+}
+
+.searchtitle {
+  color:white;
+  text-align: left;
+  width: fit-content;
+  margin: 0 auto 40px auto;
+  font-size: 55px;
+}
+
+.forms {
+  margin: auto;
+  width: fit-content
+}
+
+.inputs {
+  color: white;
+  width: 45%;
+  font-size: 15px;
+  padding: 12px 20px;
+  margin: 16px auto 16px auto;
+  box-sizing: border-box;
+  background-color:rgba(94, 94, 94, 0.5);
+  border-radius: 18px;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.inputs:focus, .inputs:hover {
+  background-color:rgba(59, 59, 59, 0.5)
+}
+
+.searchbutton, .commentbutton {
+  color: white;
+  width: 25%;
+  font-size: 15px;
+  padding: 12px 20px;
+  margin: 15px auto 15px auto;
+  box-sizing: border-box;
+  background-color:rgba(94, 94, 94, 0.5);
+  border-radius: 18px;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.searchbutton:hover, .searchbutton:focus {
+  background-color:rgba(59, 59, 59, 0.5)
+}
+
+.choicesprompt {
+  color:white;
+  text-align: left;
+  width: auto;
+  margin: 20px auto 20px auto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Checkboxes */
+
+/* Div to hold the options nice and tight */
+.choices {
+  margin: auto;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+/* 
+  The container which holds box and text. 
+  W/o it, the span would freak out
+*/
+.container {
+  position: relative;
+  padding-left: 35px;
+  margin: 24px;
+  font-size: 22px;
+  text-align: left;
+  width: 30%;
+  /* Makes it so people can't grab text, even w/o it they can't but it's a failsafe*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.custombox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 7px;
+  background-color: rgba(59, 59, 59, 0.5);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .custombox {
+  background-color: rgba(141, 141, 141, 0.5);
+}
+
+/* When the checkbox is checked, add a lighter background */
+.container input:checked ~ .custombox {
+  background-color: rgb(255, 255, 255, .5)
+}
+
+/** END Search Page **/
+
+
+/** START Comment Page **/
+.commentbody {
+  background-image: url("https://source.unsplash.com/1600x900/?parks,moutains");
+}
+
+.comments h1 {
+  color:white;
+  text-align: left;
+  width: fit-content;
+  margin: 0 auto 40px auto;
+  font-size: 55px;
+}
+
+.commentstextarea {
+  background-color: rgba(94, 94, 94, 0.5);
+  color: white;
+  width: 95%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 15px auto 15px auto;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.commentstextarea:focus, .commentstextarea:hover {
+  background-color: rgba(59, 59, 59, 0.5)
+}
+
+/** END Comment Page **/
+
+/** START Results Page **/
+.resultsbody {
+  min-height: 95%;
+  height: auto;
+}
+
+.resultstitlediv {
+  height: auto;
+  width: fit-content;
+  margin: auto;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+  padding: 20px 30px;
+}
+
+.resultstitle {
+  margin: auto;
+  width: fit-content;
+}
+
+.resultsdiv {
+  height: auto;
+  width: auto;
+  margin: 20px !important;
+  background-color: rgb(0, 0, 0, .8);
+  border-radius: 30px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.restaurantscolumn, .lodgingcolumn, .entertainmentcolumn{
+  min-height: 550px;
+  height: auto;
+  width: 100%;
+  margin: 20px;
+}
+
+.resultscolumn {
+  background-color: rgba(59, 59, 59, 0.5);
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.resultsdiv h3{
+  margin-bottom: 50px;
+  font-size: 60px;
+}
+
+.resultstype {
+  font-size: 30px;
+}
+
+.rating {
+  font-size: 20px; 
+}
+
+.resultsimg {
+  width: 80%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-image: cover;
+  margin-bottom: 20px;
+}
+
+
+/** END Results Page **/
+
+/* Scrollbar  */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(51, 51, 51);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(90, 90, 90); 
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding-top: 20px;
+  margin:0;
+  position: absolute;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+}
+
+.commentstextarea::placeholder {
+  color: white;
+}
+
+.galleryinput::placeholder, textarea::placeholder {
+  color: black;
+}

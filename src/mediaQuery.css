@@ -1,0 +1,141 @@
+@media screen and (max-width: 992px) {
+    .title{
+        font-size: 60px;
+    }
+    .description{
+        width: 80%;
+    }
+    .description h2{
+        font-size: 30px;
+}
+   .description p{
+       font-size: 25px;
+        font-size: 40px;
+}
+   .description p{
+       font-size: 20px;
+   }
+
+   .phototitle{
+       font-size: 20px;
+   }
+
+
+
+   .galleryDiv img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 5px 0 5px 0;
+  }
+
+   .galleryPost{
+       width: 80%;
+   }
+
+}
+
+@media screen and (max-width: 770px){
+    /* .description h2 {
+        font-size: 20px;
+    } */
+
+    .galleryDiv {
+        column-count: 3;
+        column-gap: 10px;
+        -webkit-column-count: 3;
+        -webkit-column-gap:   10px;
+        -moz-column-count:    2;
+        -moz-column-gap:      10px;
+       }
+    .title{
+        font-size: 55px;
+    }
+    .description{
+        width: 80%;
+    }
+    .description h2{
+        font-size: 40px;
+}
+   .description p{
+       font-size: 30px;
+   }
+
+}
+
+@media screen and (max-width: 540px){
+    .galleryDiv {
+        column-count: 2;
+        column-gap: 10px;
+        -webkit-column-count: 2;
+        -webkit-column-gap:   10px;
+        -moz-column-count:    2;
+        -moz-column-gap:      10px;
+       }
+}
+.title{
+    font-size: 25px;
+}
+.description{
+    width: 80%;
+}
+.description h2{
+    font-size: 18px;
+}
+.description p{
+   font-size: 14px;
+}
+
+.phototitle{
+   font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+    .logintitle{
+        font-size: 17px;
+    }
+    .logintitle span{
+        font-size: 15px;
+    }
+    .loginsub{
+        font-size: 12px;
+    }
+    .logininput, .loginbutton, .signupbutton{
+        font-size: 11px;
+    }
+}
+.loginsub, .logininput, .loginbutton, .signupbutton{
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+/* @media screen and (max-width: 992px) {
+  
+    .footer{
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    .searchtitle{
+        font-size: 25px;
+       
+    }
+    .searchbutton{
+        font-size: 10px;
+    }
+}
+
+.choicesprompt, .searchbutton{
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+@media screen and (max-width: 992px) {
+    .comments h1{
+        font-size: 25px;
+    }
+    .commentbutton{
+        font-size: 10px;
+    }
+    .inputs{
+        font-size: 12px;
+    }
+}
